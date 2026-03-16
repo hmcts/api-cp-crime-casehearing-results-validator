@@ -76,7 +76,7 @@ class OpenApiObjectsTest {
     @Test
     void generated_result_line_dto_should_have_expected_fields() {
         assertThat(ResultLineDto.class).hasDeclaredFields(
-                "id", "shortCode", "label", "defendantId", "offenceId"
+                "id", "shortCode", "label", "defendantId", "offenceId", "isConcurrent", "consecutiveToOffence"
         );
     }
 
@@ -88,7 +88,7 @@ class OpenApiObjectsTest {
     @Test
     void generated_offence_dto_should_have_expected_fields() {
         assertThat(OffenceDto.class).hasDeclaredFields(
-                "id", "offenceCode", "offenceTitle", "hasActiveElectronicMonitoring"
+                "id", "offenceCode", "offenceTitle", "hasActiveElectronicMonitoring", "orderIndex"
         );
     }
 

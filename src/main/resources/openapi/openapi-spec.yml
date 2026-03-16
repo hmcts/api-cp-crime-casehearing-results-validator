@@ -187,6 +187,12 @@ components:
         offenceId:
           type: string
           description: Reference to offence
+        isConcurrent:
+          type: boolean
+          description: Whether this sentence is concurrent with another
+        consecutiveToOffence:
+          type: string
+          description: Offence identifier that this sentence is consecutive to
 
     DefendantDto:
       type: object
@@ -220,6 +226,9 @@ components:
         hasActiveElectronicMonitoring:
           type: boolean
           description: Active electronic monitoring indicator
+        orderIndex:
+          type: integer
+          description: Offence order index (count number) for display in validation messages
 
     DraftValidationResponse:
       type: object
