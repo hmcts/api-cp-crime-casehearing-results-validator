@@ -206,6 +206,9 @@ components:
         name:
           type: string
           description: Defendant name
+        masterDefendantId:
+          type: string
+          description: Master defendant identifier for linked cases (same person across cases)
 
     OffenceDto:
       type: object
