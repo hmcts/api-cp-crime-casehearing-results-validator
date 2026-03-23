@@ -82,7 +82,7 @@ class OpenApiObjectsTest {
 
     @Test
     void generated_defendant_dto_should_have_expected_fields() {
-        assertThat(DefendantDto.class).hasDeclaredFields("id", "name");
+        assertThat(DefendantDto.class).hasDeclaredFields("id", "firstName", "lastName");
     }
 
     @Test

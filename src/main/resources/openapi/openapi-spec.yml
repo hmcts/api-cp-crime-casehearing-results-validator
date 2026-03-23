@@ -198,14 +198,18 @@ components:
       type: object
       required:
         - id
-        - name
+        - firstName
+        - lastName
       properties:
         id:
           type: string
           description: Defendant identifier
-        name:
+        firstName:
           type: string
-          description: Defendant name
+          description: Defendant first name
+        lastName:
+          type: string
+          description: Defendant last name
         masterDefendantId:
           type: string
           description: Master defendant identifier for linked cases (same person across cases)
